@@ -38,10 +38,11 @@ const useStyles = makeStyles(({ spacing }: Theme) => ({
   },
 }))
 
-const schema = Yup.object().shape<Partial<Module>>({
+const schema = Yup.object().shape({
+  id: Yup.number().required(),  // 显式指定 id 为 number 类型
   name: Yup.string().required(YUP_MSG.REQUIRED).max(20, YUP_MSG.MAX_LENGTH(20)),
   description: Yup.string().max(1000, YUP_MSG.MAX_LENGTH(1000)),
-})
+});
 
 const FORM_STATE_INIT: Module = {
   id: 0,
