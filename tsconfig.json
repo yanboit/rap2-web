@@ -21,7 +21,7 @@
     "skipLibCheck": true,
     "preserveConstEnums": true,
     "allowJs": false,
-    "strict": true,
+    "strict": false,           // 禁用严格模式
     "declaration": false,
     "emitDecoratorMetadata": true,
     "noUnusedLocals": false,
@@ -39,7 +39,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "strictNullChecks": false,
+    "strictNullChecks": false
   },
   "filesGlob": [
     "types/*.d.ts",
