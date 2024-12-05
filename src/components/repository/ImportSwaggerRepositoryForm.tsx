@@ -42,7 +42,7 @@ const useStyles = makeStyles(({ spacing }: Theme) => ({
 }))
 
 const schema = Yup.object().shape({
-  docUrl: Yup.string().url(YUP_MSG.INVALID_URL),  // 如果需要 URL 格式验证
+  docUrl: Yup.string(),  // 如果需要 URL 格式验证
   swagger: Yup.string(),
 });
 
